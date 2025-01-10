@@ -3,6 +3,7 @@ import Addition
 import Subtraction
 import Multiplication
 import Division
+import modulus1
 
 # This is to present a menu to the user
 print("Select operation.")
@@ -10,6 +11,7 @@ print("1.Addition")
 print("2.Subtract")
 print("3.Multiply")
 print("4.Divide")
+print("5.Modulus")
 
 while True:
     # take input from the user
@@ -35,6 +37,8 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", Division.divide(num1, num2))
+        elif choice == '5':
+            print(num1, "/", num2, "=", modulus1.mod(num1,num2))
         
         # check if user wants another calculation
         # break the while loop if answer is no
